@@ -5,7 +5,6 @@ import static org.assertj.core.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.assertj.core.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -42,7 +41,7 @@ public class CarsTest {
 	}
 
 	@Test
-	@DisplayName(" winner Position 찾기")
+	@DisplayName("winner Position 찾기")
 	public void getMaxPosition(){
 		assertThat(cars.getMaxPosition()).isEqualTo(3);
 	}
