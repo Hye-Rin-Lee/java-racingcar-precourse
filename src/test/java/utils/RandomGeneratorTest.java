@@ -20,8 +20,8 @@ public class RandomGeneratorTest {
 	@Test
 	@DisplayName("생성된 수가 이동 가능한 수인지 판단.")
 	public void movable() {
-		assertThat(new RandomNumber(4).movable()).isTrue();
-		assertThat(new RandomNumber(3).movable()).isFalse();
+		assertThat(new RandomNumber(4).isMovable()).isTrue();
+		assertThat(new RandomNumber(3).isMovable()).isFalse();
 	}
 
 }
