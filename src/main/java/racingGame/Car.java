@@ -13,6 +13,7 @@ public class Car {
 			throw new IllegalArgumentException();
 		}
 		this.name = name;
+		this.position = 0;
 	}
 
 	public Car(String name, int position) {
