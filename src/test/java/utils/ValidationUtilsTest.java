@@ -14,4 +14,13 @@ public class ValidationUtilsTest {
 		assertThat(ValidationUtils.validRange(11)).isFalse();
 		assertThat(ValidationUtils.validRange(0)).isFalse();
 	}
+
+	@Test
+	@DisplayName("입력 받은 이름 유효성체크")
+	public void nameLengthTest() {
+		assertThat(ValidationUtils.checkLength("pobi")).isTrue();
+		assertThat(ValidationUtils.checkLength("crong")).isTrue();
+		assertThat(ValidationUtils.checkLength("honux")).isTrue();
+		assertThat(ValidationUtils.checkLength("pororo")).isFalse();
+	}
 }
