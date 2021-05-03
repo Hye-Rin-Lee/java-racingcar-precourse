@@ -5,22 +5,10 @@ import static org.assertj.core.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class CarsTest {
-
-	Cars cars ;
-
-	@BeforeEach
-	void setUp(){
-		List<Car> carList = new ArrayList<>();
-		carList.add(new Car("aa",2) );
-		carList.add(new Car("bb",1));
-		carList.add(new Car("cc",3));
-		cars = new Cars(carList);
-	}
 
 	@Test
 	@DisplayName("차생성 테스트")
@@ -43,6 +31,12 @@ public class CarsTest {
 	@Test
 	@DisplayName("winner Position 찾기")
 	public void getMaxPosition(){
+		List<Car> carList = new ArrayList<>();
+		carList.add(new Car("aa", 2));
+		carList.add(new Car("bb", 1));
+		carList.add(new Car("cc", 3));
+		Cars cars = new Cars(carList);
+
 		assertThat(cars.getMaxPosition()).isEqualTo(3);
 	}
 }
