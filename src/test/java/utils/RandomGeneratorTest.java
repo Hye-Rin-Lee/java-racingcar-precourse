@@ -16,4 +16,12 @@ public class RandomGeneratorTest {
 		RandomNumber no = generator.generateNumber();
 		assertThat(no).isNotNull();
 	}
+
+	@Test
+	@DisplayName("생성된 수가 이동 가능한 수인지 판단.")
+	public void movable() {
+		assertThat(new RandomNumber(4).movable()).isTrue();
+		assertThat(new RandomNumber(3).movable()).isFalse();
+	}
+
 }
