@@ -6,6 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class ValidationUtilsTest {
+
 	@Test
 	@DisplayName("숫자 범위 검증 유틸 테스트")
 	public void numberRangeTest() {
