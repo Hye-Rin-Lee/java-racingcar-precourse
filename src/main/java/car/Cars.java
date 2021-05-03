@@ -1,7 +1,9 @@
-package racingGame;
+package car;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import randomNumber.RandomNumberGenerator;
 
 public class Cars {
 

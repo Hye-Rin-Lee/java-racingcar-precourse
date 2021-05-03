@@ -2,8 +2,8 @@ package manager;
 
 import java.util.Scanner;
 
-import racingGame.Cars;
-import racingGame.RandomNumberGenerator;
+import car.Cars;
+import randomNumber.RandomNumberGenerator;
 
 public class GameManager {
 

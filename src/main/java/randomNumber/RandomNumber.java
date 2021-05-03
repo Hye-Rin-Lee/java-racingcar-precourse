@@ -1,4 +1,4 @@
-package racingGame;
+package randomNumber;
 
 import utils.ValidationUtils;
 

@@ -8,6 +8,10 @@ import java.util.List;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import car.Car;
+import car.Cars;
+import randomNumber.RandomNumber;
+
 public class CarsTest {
 
 	@Test

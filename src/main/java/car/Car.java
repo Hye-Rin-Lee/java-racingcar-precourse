@@ -1,5 +1,6 @@
-package racingGame;
+package car;
 
+import randomNumber.RandomNumber;
 import utils.ValidationUtils;
 
 public class Car {
