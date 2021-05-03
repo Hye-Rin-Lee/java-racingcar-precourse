@@ -18,6 +18,10 @@ public class GameManager {
 
 	public void play() {
 		initGame();
+		for (int i = 0; i < attempt; i++) {
+			cars.race(generator);
+		}
+		cars.getWinners();
 	}
 
 	public void initGame() {
