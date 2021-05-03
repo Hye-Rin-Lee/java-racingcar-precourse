@@ -8,6 +8,7 @@ public class RandomNumber {
 
 	public RandomNumber(int no) {
 		if (!ValidationUtils.validRange(no)) {
+			System.out.println("error : 유효하지 않은 숫자 범위 입니다.");
 			throw new IllegalArgumentException();
 		}
 		this.number = no;

@@ -9,6 +9,7 @@ public class Car {
 
 	public Car(String name) {
 		if (!ValidationUtils.checkLength(name)) {
+			System.out.println("error : 유효하지 않은 이름 길이 입니다.");
 			throw new IllegalArgumentException();
 		}
 		this.name = name;
